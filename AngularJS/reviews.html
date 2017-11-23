@@ -1,0 +1,17 @@
+<script src="star.js"></script>
+<table ng-controller="CoffeeDetailController">
+    <label>Reviews for our best {{coffee.name}}:</label>
+    <tr class="coffees">
+        <td>Reviewer:</td>
+        <td>Comment:</td>
+        <td>Rating:</td>
+    </tr>
+    <tr ng-repeat="reviews in coffee.reviews">
+        <td>{{reviews.reviewer}}</td>
+        <td>{{reviews.comment}}</td>
+        <td>{{reviews.rating}}</td>
+    </tr>
+</table>
+<div class="gradtopbottom">
+    <img src="acoffee.jpg" class="imgReview">
+</div>

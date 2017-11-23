@@ -1,0 +1,18 @@
+<table id="table" ng-controller="CoffeeController">
+	Search: <input ng-model="query"><br>
+	<tr>
+		<td>Rreviews:</td>
+		<td>Brand:</td>
+		<td>Coffee Title:</td>
+		<td>Country:</td>
+	</tr>
+	<tr ng-repeat="coffee in coffees | filter:query | orderBy:'name'" id={{coffee.id}}>
+		<td><a href="#!/coffees/{{coffee.id}}">Reviews</a></td>
+		<td>{{coffee.brand}}</td>
+		<td>{{coffee.name}}</td>
+		<td>{{coffee.country}}</td>
+	</tr>
+</table>
+<div class = "grad">
+	<img src="coffee.jpg" class="imgCoffee">
+</div>

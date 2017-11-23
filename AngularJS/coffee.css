@@ -1,0 +1,28 @@
+body{
+    padding: 10px;
+}
+table{
+    width: 100%;
+}
+.imgCoffee{
+    margin-top: 15px; 
+    margin-left: 430px;
+    width:500px;
+    height:300px;
+}
+.imgReview{
+    margin-top: 15px; 
+    margin-left: 330px;
+    width:800px;
+    height:450px;
+}
+.grad{
+    height:330px;
+    background: linear-gradient(to right, rgba(151,148,148,0), rgba(151,148,148,1));
+}
+.gradtopbottom{
+    height:400px;
+    background: linear-gradient(grey, white);
+}
+tr:nth-child(even) {background: #E6E6E6}
+tr:nth-child(odd) {background: #FFF}
